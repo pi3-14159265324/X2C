@@ -11,7 +11,7 @@ EXPRESSION IMITATION**_
 🔧 **Clone the Code and Set Up the Environment**
 
 ```bash
-git clone git@github.com:lipzh5/X2CNet.git
+git clone git@github.com:pi3-14159265324/X2CNet.git
 cd X2CNet
 
 # create env using conda
@@ -34,10 +34,8 @@ A dataset preprocessing script has been uploaded to help correct image paths aft
 You can find it here: [`misc/dataset_preprocessing.py`](misc/dataset_preprocessing.py)
 
 **How to Use**
-```
-git clone https://huggingface.co/datasets/Peizhen/X2C
-python misc/dataset_preprocessing.py  --x2c /path/to/X2C 
-```
+
+coming soon
 
  **Make sure to replace** /path/to/X2C with the actual path where your X2C dataset is stored.
 
@@ -75,21 +73,15 @@ python x2cnet_inference.py --driving /path/to/driving_video
 
 ## Real-world Inference Results
 ![Alt text](docs/static/images/inference_example3_160.png)
-Our dataset and imitation pipeline are applicable to multiple robots with different facial appearances, requiring only minimal effort to project the control values onto the target platform.
-![Alt text](docs/static/images/inference_example2.png)
+
 
 ## 🤝 Contributing
 We are actively updating and improving this repository. If you find any bugs or have suggestions, welcome to raise issues or submit pull requests (PR) 💖.
 
 
-## 💖 Citation 
-If you find <strong>X2C</strong> or <strong>X2CNet</strong> useful for your research, welcome to 🌟 this repo and cite our work using the following BibTeX:
-```bibtex
-@article{li2025x2c, title={X2C: A Dataset Featuring Nuanced Facial Expressions for Realistic Humanoid Imitation}, 
-author={Li, Peizhen and Cao, Longbing and Wu, Xiao-Ming and Yang, Runze and Yu, Xiaohan}, journal={arXiv preprint arXiv:2505.11146}, 
-year={2025} }
-```
+## 💖 
+If you find <strong>X2C</strong> or <strong>X2CNet</strong> useful for your research, welcome to 🌟 this repo 
 
-*Long live in arXiv.*
+
 
 
