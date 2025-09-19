@@ -1,2 +1,2 @@
-# X2CNet
+# X2C
 Learning human-to-humanoid facial expression imitation
