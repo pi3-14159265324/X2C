@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>X2C: A Dataset Featuring Nuanced Facial Expressions
+ <br>for Realistic Humanoid Imitation</title>
+  <link rel="icon" type="image/x-icon" href="static/images/ameca_favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+
+  <!-- TODO move to css file -->
+  <style>
+    .small-sup {
+        font-size: 0.6em; /* Smaller size */
+    }
+    .institution-logo {
+            margin-top: 20px; /* top margin */
+            max-width: 175px; /* max width */
+        }
+
+    .image-container {
+        display: flex; /* Use flexbox for layout */
+        justify-content: center; /* Center images horizontally */
+        gap: 20px; /* Space between images */
+    }
+    .image-container figure {
+        text-align: center; /* Center the caption */
+    }
+
+    .image-container figcaption {
+    margin-top: 8px; /* Adds space between the image and caption */
+
+  }
+  .content {
+    max-width: 100%;    /* Set the maximum width for the caption text */
+    margin: 0 auto;    /* Center the content */
+    line-height: 1.5;  /* Improves readability */
+}
+
+    .image-container img {
+        /* width: 459px; Set fixed width */
+        /* height: 220px; Set fixed height */
+        margin-top: 15px; /* top margin */
+        flex-basis: 100%;
+        object-fit: cover; /* Maintain aspect ratio */
+    }
+
+    .single-image {
+        flex-basis: 100%; /* Take full width for the single image */
+        margin-top: 20px; /* Space above the single image */
+    }
+
+    .video-container {
+            display: flex; /* Use flexbox for layout */
+            /* justify-content: space-between; Space between videos */
+            /* margin: 20px;  Optional margin */
+        }
+    .video {
+            position: relative; /* Position for watermark */
+            width: 500px; /* Fixed width for the video */
+            margin-right: 20px; /* Right margin for spacing */
+            /* margin: 0 10px;  Optional spacing between videos */
+    }
+    
+    .video:last-child {
+        margin-right: 0; /* Remove margin for the last video */
+    }
+    
+    video {
+        width: 100%; /* Responsive width */
+        height: auto; /* Maintain aspect ratio */
+    }
+    .watermark {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        /*bottom: 10px;  Position at bottom */
+        /*right: 10px;  Position at right */
+        background: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+        padding: 5px; /* Padding for the watermark */
+        font-size: 14px; /* Font size for the watermark */
+        color: black; /* Text color */
+        /*border-radius: 5px;  Rounded corners */
+    }
+  
+</style>
+</head>
+<body>
+
+
+<section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">LEARNING HUMAN-TO-HUMANOID FACIAL EXPRESSION IMITATION</h1>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <!-- Your video here -->
+        <source src="static/videos/banner_video.mp4"
+        type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        <div class="content has-text-centered">
+        <div class="content has-text-justified">
+        A video demonstration showcases the realistic imitation capabilities of our proposed framework <strong>X2CNet</strong>, where the correspondence between expression representation in image space and the robot's action space is learned using the <strong>X2C</strong> dataset. TThis framework validates the value of our dataset in advancing research on realistic humanoid facial expression imitation.
+        Notably, our dataset and imitation framework are applicable to <strong>multiple</strong> humanoid robots with different facial appearances.
+        </div>
+        </div>
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- End teaser video -->
+
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+        <div class="image-container">
+          <figure>
+              <img src="static/images/inference_example3_160.png" alt="distraction", class=""single-image>
+              <figcaption> 
+                <div class="content has-text-centered">
+                <div class="content has-text-justified">
+                <strong>Examples of realistic humanoid imitation.</strong> Different individuals express a wide range of facial expressions, with nuances reflected in features such as frown, gaze direction, eye openness, nose wrinkles, mouth openness, and so on. These nuanced human facial expressions extend beyond canonical emotions and can be regarded as either blends of different canonical emotions or as a single emotion with varying intensities. The humanoid robot, Ameca, mimics every detail, resulting in a realistic imitation.
+                Notably, our dataset and imitation framework are applicable to <strong>multiple</strong> robots with different facial appearances.
+              </div>
+              </div>
+              </figcaption>
+          </figure>
+          
+        </div>
+
+        <div class="image-container">
+          <figure>
+              <img src="static/images/inference_example2.png" alt="distraction", class=""single-image>
+          </figure>
+          
+        </div>
+    </div>
+    
+  </div>
+</section>
+
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            The ability to imitate realistic facial expressions is essential for humanoid robots engaged in affective human-robot communication. However, the lack of datasets containing diverse humanoid facial expressions with proper annotations hinders progress in realistic humanoid facial expression imitation. To address these challenges, we introduce <strong>X2C</strong> (Anything to Control), a dataset featuring nuanced facial expressions for realistic humanoid imitation. With <strong>X2C</strong>, we contribute: 1) a high-quality, high-diversity, large-scale dataset comprising 100,000 (image, control value) pairs. Each image depicts a humanoid robot displaying a diverse range of facial expressions, annotated with 30 control values representing the ground-truth expression configuration; 2) <strong>X2CNet</strong>, a novel human-to-humanoid facial expression imitation framework that learns the correspondence between nuanced humanoid expressions and their underlying control values from <strong>X2C</strong>. It enables facial expression imitation in the wild for different human performers, providing a baseline for the imitation task, showcasing the potential value of our dataset; 3) real-world demonstrations on a physical humanoid robot, highlighting its capability to advance realistic humanoid facial expression imitation. 
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<!-- core images -->
+
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">The <strong>X2C</strong> Dataset</h2>
+        <div class="image-container">
+          <figure>
+              <img src="static/images/physical_virtual_control4.png" alt="project lead", class=""single-image>
+              <figcaption>
+                <div class="content has-text-centered">
+                <div class="content has-text-justified">
+                  <strong>Demonstration of X2C dataset examples.</strong>  Each example in the X2C dataset consists
+                  of: (1) an image depicting the virtual robot, shown in the middle; and (2) the corresponding control
+                  values, visualized at the bottom. In these visualizations, the height of each blue bar represents the
+                  magnitude of the corresponding value, while the orange dots indicate the values in the neutral state. 
+                  </div>
+                  </div>
+              </figcaption>
+          </figure>
+        </div> 
+
+         
+
+    </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">Dataset Collection </h2>
+        <div class="image-container">
+          <figure>
+              <img src="static/images/dataset_pipeline.png" alt="project lead", class="single-image", style="width: 80%">
+              <figcaption>
+                <div class="content has-text-centered">
+                <div class="content has-text-justified">
+                  <strong>The pipeline for dataset collection.</strong> We first curate humanoid facial expression animations
+                  covering all basic emotions and beyond. Images and their corresponding control values are then
+                  sampled at the same timestamps (e.g., if an image is sampled at t = 2.0, its control value annotation
+                  is also sampled at t = 2.0) to obtain the temporally aligned pairs
+                  </div>
+                  </div>
+              </figcaption>
+          </figure>
+        </div> 
+
+       
+
+    </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">Control Values and Distributions</h2>
+      <div class="image-container">
+        <figure>
+            <img src="static/images/exp-ctrl.png" alt="project lead", style="width: 60%">
+            <figcaption>
+              <div class="content has-text-centered">
+              <div class="content has-text-justified">
+                <strong>An illustration of the correspondence between control values and control units.</strong>
+                In the
+control value visualization, the first 4 values control the brow movements, the next 4 control eyelid
+motions, and so on for the other units.
+                </div>
+                </div>
+            </figcaption>
+        </figure>
+      </div>
+      <div class="image-container">
+        <figure>
+            <img src="static/images/ctrl_distribution1_nips.png" alt="project lead", style="width: 80%">
+            <figcaption>
+              <div class="content has-text-centered">
+              <div class="content has-text-justified">
+                <strong>Value distributions of 30 controls.</strong>
+                 Controls for different expression-relevant units are
+indicated by different colors. 
+                </div>
+                </div>
+            </figcaption>
+        </figure>
+      </div> 
+
+    </div>
+    
+  </div>
+</section>
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">Framework</h2>
+        <div class="image-container">
+          <figure>
+              <img src="static/images/imitation_framework.png" alt="project lead", style="width: 80%">
+              <figcaption>
+                <figcaption>
+                  <div class="content has-text-centered">
+                    <div class="content has-text-justified">
+                      An overview of <strong>X2CNet</strong>, the proposed imitation framework. The first module captures
+                      facial expression subtleties from humans, while the mapping network learns the correspondence
+                      between various humanoid expressions and their underlying control values using the <strong>X2C</strong> dataset.
+                    </div>
+                  </div>
+                </figcaption>
+ 
+                </div>
+              </figcaption>
+          </figure>
+        </div>
+
+    </div>
+    
+  </div>
+</section>
+
+  </body>
+  </html>
