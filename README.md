@@ -75,10 +75,7 @@ python x2cnet_inference.py --driving /path/to/driving_video
 
 
 ## 🤝 Contributing
-We are actively updating and improving this repository. If you find any bugs or have suggestions, welcome to raise issues or submit pull requests (PR) 💖.
-
-
-## 💖 
+We are actively updating and improving this repository. If you find any bugs or have suggestions, welcome to raise issues or submit pull requests (PR) 💖. 
 If you find <strong>X2C</strong> or <strong>X2CNet</strong> useful for your research, welcome to 🌟 this repo 
 
 
