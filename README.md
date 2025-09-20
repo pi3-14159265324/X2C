@@ -1,22 +1,21 @@
-# Learning human-to-humanoid facial expression imitation 🤖 
+# Human-to-humanoid facial expression imitation 🤖 
 This repository is the official implementation of the imitation framework **X2CNet** in paper 
 
-_**X2C: LEARNING HUMAN-TO-HUMANOID FACIAL
-EXPRESSION IMITATION**_ 
+_**X2C: A Dataset for Realistic Human-to-Humanoid Facial Expression Imitation**_ 
 
-![Alt text](docs/static/images/imitation_framework.png)
+![Alt text](docs/static/images/imitation_framework2.png)
 
 
 ## 🚀 Getting Started 
 🔧 **Clone the Code and Set Up the Environment**
 
 ```bash
-git clone git@github.com:pi3-14159265324/X2CNet.git
-cd X2CNet
+git clone git@github.com:pi3-14159265324/X2C.git
+cd X2C
 
 # create env using conda
-conda create -n x2cnet python=3.9
-conda activate x2cnet
+conda create -n x2c python=3.9
+conda activate x2c
 # for cuda 12.1
 conda install pytorch==2.4.0 torchvision==0.19.0 torchaudio==2.4.0 pytorch-cuda=12.1 -c pytorch -c nvidia
 ```
@@ -30,7 +29,7 @@ pip install -r requirements.txt
 
 ## 🛠️ Dataset Preprocessing
 
-A dataset preprocessing script has been uploaded to help correct image paths after downloading the X2C dataset.
+We provide a preprocessing script to correct image paths after downloading the X2C dataset (available soon).
 You can find it here: [`misc/dataset_preprocessing.py`](misc/dataset_preprocessing.py)
 
 **How to Use**
@@ -72,7 +71,7 @@ python x2cnet_inference.py --driving /path/to/driving_video
 
 
 ## Real-world Inference Results
-![Alt text](docs/static/images/inference_example3_160.png)
+![Alt text](docs/static/images/inference_example2.png)
 
 
 ## 🤝 Contributing
