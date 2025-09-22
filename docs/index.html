@@ -24,8 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>X2C: A Dataset Featuring Nuanced Facial Expressions
- <br>for Realistic Humanoid Imitation</title>
+  <title>X2C: Enabling Realistic Human-to-Humanoid Imitation</title>
   <link rel="icon" type="image/x-icon" href="static/images/ameca_favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -130,7 +129,7 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">X2C: A DATASET FOR REALISTIC HUMAN-TO-HUMANOID FACIAL EXPRESSION IMITATION</h1>
+            <h1 class="title is-1 publication-title">X2C: ENABLING REALISTIC HUMAN-TO-HUMANOID <br>FACIAL EXPRESSION IMITATION</h1>
              <div class="column has-text-centered">
                     <div class="publication-links">
                    <!-- Github link -->
@@ -214,8 +213,11 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            The ability to imitate realistic facial expressions is essential for humanoid robots engaged in affective human-robot communication. However, the lack of datasets containing diverse humanoid facial expressions with proper annotations hinders progress in realistic humanoid facial expression imitation. To address these challenges, we introduce <strong>X2C</strong> (Anything to Control), a dataset featuring nuanced facial expressions for realistic humanoid imitation. With <strong>X2C</strong>, we contribute: 1) a high-quality, high-diversity, large-scale dataset comprising 100,000 (image, control value) pairs. Each image depicts a humanoid robot displaying a diverse range of facial expressions, annotated with 30 control values representing the ground-truth expression configuration; 2) <strong>X2CNet</strong>, a novel human-to-humanoid facial expression imitation framework that learns the correspondence between nuanced humanoid expressions and their underlying control values from <strong>X2C</strong>. It enables facial expression imitation in the wild for different human performers, providing a baseline for the imitation task, showcasing the potential value of our dataset; 3) real-world demonstrations on a physical humanoid robot, highlighting its capability to advance realistic humanoid facial expression imitation. 
-          </p>
+            The ability to imitate realistic facial expressions is essential for humanoid robots in affective human–robot communication. Achieving this requires modeling two correspondences: between human and humanoid expressions, and between humanoid expressions and robot control values. 
+            During training, we predict control values from humanoid expression images, while at execution time the control values drive the robot to reproduce expressions. Progress in this area has been limited by the lack of datasets containing diverse humanoid expressions with precise control annotations. 
+            We introduce <strong>X2C</strong> (Expression to Control), a large-scale dataset of 100,000 < image, control value > pairs, where each image depicts a humanoid robot expression annotated with 30 ground-truth control values. Building on this resource, we propose <strong>X2CNet</strong>, 
+              a framework that transfers expression dynamics from human to humanoid faces and learns the mapping between humanoid expressions and control values. <strong>X2CNet</strong> enables in-the-wild imitation across diverse human performers and establishes a strong baseline for this task. Real-world robot experiments validate our framework and demonstrate the potential of <strong>X2C</strong> to advance realistic human-to-humanoid facial expression imitation.
+            </p>
         </div>
       </div>
     </div>
