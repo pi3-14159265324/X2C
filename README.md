@@ -1,7 +1,7 @@
 # Human-to-humanoid facial expression imitation 🤖 
 This repository is the official implementation of the imitation framework **X2CNet** in paper 
 
-_**X2C: A Dataset for Realistic Human-to-Humanoid Facial Expression Imitation**_ 
+_**X2C: Enabling Realistic Human-to-Humanoid Facial Expression Imitation**_ 
 
 ![Alt text](docs/static/images/imitation_framework2.png)
 
